@@ -37,7 +37,8 @@ int printSort(int& first, int& middle, int& last)
 { 
 if (initialRed > initialGreen) 
 {
- if (initialRed > initialBlue) last = initialRed; 
+ if (initialRed > initialBlue) 
+ first = initialRed; 
  else if (initialRed < initialBlue) 
  middle = initialRed; } 
 
@@ -47,10 +48,11 @@ if (initialGreen > initialRed)
 else if (initialGreen <initialBlue) 
  middle = initialGreen; } 
 
-if (initialBlue > initialGreen) 
- { if (initialBlue > initialRed) 
+if (initialBlue > initialRed) 
+ { if (initialBlue > initialGreen) 
  first = initialBlue; 
- else if (initialBlue < initialRed) middle = initialBlue; }
+ else if (initialBlue < initialGreen) 
+ middle = initialBlue; }
 
 if (initialGreen != first && initialGreen != middle) 
   last = initialGreen; 
