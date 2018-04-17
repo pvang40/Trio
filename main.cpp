@@ -53,7 +53,7 @@ if (initialBlue > initialGreen)
  else if (initialBlue < initialRed) middle = initialBlue; }
 
 if (initialGreen != first && initialGreen != middle) 
-  middle = initialGreen; 
+  last = initialGreen; 
   if (initialRed != first && initialRed != middle) 
   last = initialRed; 
   if (initialBlue != first && initialBlue != middle) 
