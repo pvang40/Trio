@@ -40,16 +40,19 @@ if (initialRed > initialGreen)
  if (initialRed > initialBlue) last = initialRed; 
  else if (initialRed < initialBlue) 
  middle = initialRed; } 
- if (initialGreen > initialRed) 
+
+if (initialGreen > initialRed) 
  { if (initialGreen > initialBlue) 
  first = initialGreen; 
- else if (initialGreen <initialBlue) 
+else if (initialGreen <initialBlue) 
  middle = initialGreen; } 
- if (initialBlue > initialGreen) 
+
+if (initialBlue > initialGreen) 
  { if (initialBlue > initialRed) 
  first = initialBlue; 
  else if (initialBlue < initialRed) middle = initialBlue; }
-  if (initialGreen != first && initialGreen != middle) 
+
+if (initialGreen != first && initialGreen != middle) 
   middle = initialGreen; 
   if (initialRed != first && initialRed != middle) 
   last = initialRed; 
